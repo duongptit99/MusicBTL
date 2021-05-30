@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imagebackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"/>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="@drawable/custom_backgound_banner"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/imagebackgroundbanner"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imagebackgroundbanner"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/imagebackgroundbanner" />-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imagebackgroundbanner"
+        app:layout_constraintEnd_toEndOf="@id/imagebackgroundbanner"
+        app:layout_constraintStart_toStartOf="@id/imagebackgroundbanner">
+
+        <ImageView
+            android:id="@+id/imageviewbanner"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textbanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Thoi Khong Sai Lech"
+            app:layout_constraintStart_toEndOf="@+id/imageviewbanner"
+            app:layout_constraintTop_toTopOf="@+id/imageviewbanner"
+            android:layout_marginTop="10dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageviewbanner"
+            app:layout_constraintTop_toBottomOf="@id/textbanner">
+
+            <TextView
+                android:id="@+id/textview_noi_dung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

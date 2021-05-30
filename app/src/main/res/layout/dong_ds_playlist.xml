@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgdsplaylist"
+            android:layout_width="190dp"
+            android:layout_height="190dp"/>
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/text_view_dsplaylist"
+        android:text="nhac hot"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:maxWidth="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"/>
+    <TextView
+        android:id="@+id/text_view_dscasiplaylist"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="ten ca si"
+        android:maxWidth="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"/>
+
+
+</LinearLayout>
