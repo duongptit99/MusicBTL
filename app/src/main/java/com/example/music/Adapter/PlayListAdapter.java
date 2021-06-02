@@ -38,7 +38,7 @@ public class PlayListAdapter extends RecyclerView.Adapter<PlayListAdapter.ViewHo
         PlayList playList = arrayList.get(position);
         holder.textViewPlayList.setText(playList.getTen());
         Picasso.with(holder.itemView.getContext()).load(playList.getHinhPlayList()).into(holder.imgBackground);
-        Picasso.with(holder.itemView.getContext()).load(playList.getIcon()).into(holder.imgPlayList);
+//        Picasso.with(holder.itemView.getContext()).load(playList.getIcon()).into(holder.imgPlayList);
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(holder.itemView.getContext(), DanhSachBaiHatActivity.class);
             intent.putExtra("itemplaylist",arrayList.get(position));
@@ -64,40 +64,8 @@ public class PlayListAdapter extends RecyclerView.Adapter<PlayListAdapter.ViewHo
             super(itemView);
             textViewPlayList = itemView.findViewById(R.id.text_view_playlist);
             imgBackground = itemView.findViewById(R.id.img_background_playlist);
-            imgPlayList = itemView.findViewById(R.id.img_playlist);
+//            imgPlayList = itemView.findViewById(R.id.img_playlist);
         }
     }
 
-
-//    public PlayListAdapter(@NonNull Context context, int resource, @NonNull List<PlayList> objects) {
-//        super(context, resource, objects);
-//    }
-//
-//    class ViewHolder{
-//        TextView textViewPlaylist;
-//        ImageView imgbackground,imgPlaylist;
-//    }
-//
-//    @NonNull
-//    @Override
-//    //dung de gan layout trong phan item vao trong list
-//    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//        ViewHolder viewHolder = null;
-//        if(convertView == null){
-//            LayoutInflater inflater = LayoutInflater.from(getContext());
-//            convertView = inflater.inflate(R.layout.dong_playlist,null);
-//            viewHolder = new ViewHolder();
-//            viewHolder.textViewPlaylist = convertView.findViewById(R.id.text_view_playlist);
-//            viewHolder.imgbackground = convertView.findViewById(R.id.img_background_playlist);
-//            viewHolder.imgPlaylist = convertView.findViewById(R.id.img_playlist);
-//            convertView.setTag(viewHolder);
-//        }else{
-//            viewHolder = (ViewHolder) convertView.getTag();
-//        }
-//        PlayList playList = getItem(position);
-//        Picasso.with(getContext()).load(playList.getHinhPlayList()).into(viewHolder.imgbackground);
-//        Picasso.with(getContext()).load(playList.getIcon()).into(viewHolder.imgPlaylist);
-//        viewHolder.textViewPlaylist.setText(playList.getTen());
-//        return convertView;
-//    }
 }

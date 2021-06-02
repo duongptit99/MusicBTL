@@ -2,15 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
         android:id="@+id/text_view_title_like"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Bai Hat Duoc Yeu Thich"
+        android:text="Top 5 bài hát được yêu thích"
+        android:fontFamily="@font/arimo"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/custom_border_black"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <androidx.recyclerview.widget.RecyclerView

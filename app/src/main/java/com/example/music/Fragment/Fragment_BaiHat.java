@@ -39,7 +39,6 @@ public class Fragment_BaiHat extends Fragment {
         recyclerView.setAdapter(baiHatAdapter);
         return view;
     }
-
     private void GetData() {
         Dataservice dataservice = APIService.getService();
         Call<List<BaiHat>> callback =   dataservice.GetBaiHat();

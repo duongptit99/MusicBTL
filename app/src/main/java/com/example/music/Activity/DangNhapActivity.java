@@ -49,10 +49,10 @@ public class DangNhapActivity extends AppCompatActivity {
             public void onResponse(Call<String> call, Response<String> response) {
                 String kq= response.body();
                 if(kq.equals("OK")){
-                    Toast.makeText(DangNhapActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DangNhapActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 }else {
-                    Toast.makeText(DangNhapActivity.this, "Fail", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DangNhapActivity.this, "Sai thông tin", Toast.LENGTH_SHORT).show();
                 }
             }
 

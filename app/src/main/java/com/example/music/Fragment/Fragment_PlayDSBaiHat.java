@@ -15,7 +15,7 @@ import com.example.music.Activity.PlayNhacActivity;
 import com.example.music.Adapter.PlayNhacAdapter;
 import com.example.music.R;
 
-public class Fragment_Play_DS_BaiHat extends Fragment {
+public class Fragment_PlayDSBaiHat extends Fragment {
     View view;
     RecyclerView recyclerView;
     PlayNhacAdapter playNhacAdapter;

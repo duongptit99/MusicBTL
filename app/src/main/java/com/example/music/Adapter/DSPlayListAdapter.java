@@ -59,9 +59,8 @@ public class DSPlayListAdapter extends RecyclerView.Adapter<DSPlayListAdapter.Vi
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgdsplaylist = itemView.findViewById(R.id.imgdsplaylist);
+            imgdsplaylist = itemView.findViewById(R.id.img_background_ds_playlist);
             textViewdsplaylist = itemView.findViewById(R.id.text_view_dsplaylist);
-            textViewdscasiplaylist = itemView.findViewById(R.id.text_view_dscasiplaylist);
             imgdsplaylist.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

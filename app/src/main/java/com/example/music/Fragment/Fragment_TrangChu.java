@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.music.R;
 
-public class Fragment_Trang_Chu extends Fragment {
+public class Fragment_TrangChu extends Fragment {
     View view;
 
     @Nullable

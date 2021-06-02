@@ -15,6 +15,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.music.Activity.DanhSachBaiHatActivity;
@@ -62,6 +63,9 @@ public class Fragment_Playlist extends Fragment {
         textViewTitle = view.findViewById(R.id.text_view_playlist);
         textViewMorePlayList = view.findViewById(R.id.text_view_more_playlist);
         recyclerView = view.findViewById(R.id.recycler_playlists);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        recyclerView.setLayoutManager(linearLayoutManager);
     }
 
     private void GetData() {

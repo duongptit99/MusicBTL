@@ -1,32 +1,23 @@
 package com.example.music.Activity;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.StrictMode;
 
-import android.util.Log;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.music.Adapter.ViewPagerPLayList;
-import com.example.music.Fragment.Fragment_Dia_Nhac;
-import com.example.music.Fragment.Fragment_Play_DS_BaiHat;
+import com.example.music.Fragment.Fragment_DiaNhac;
+import com.example.music.Fragment.Fragment_PlayDSBaiHat;
 import com.example.music.Model.BaiHat;
 import com.example.music.R;
 
@@ -42,8 +33,8 @@ public class PlayNhacActivity extends AppCompatActivity {
     ViewPager viewPager;
     public static ArrayList<BaiHat> baiHatArrayList = new ArrayList<>();
     public static ViewPagerPLayList viewPagerPLayList;
-    Fragment_Dia_Nhac fragment_dia_nhac;
-    Fragment_Play_DS_BaiHat fragment_play_ds_baiHat;
+    Fragment_DiaNhac fragment_dia_nhac;
+    Fragment_PlayDSBaiHat fragment_play_ds_baiHat;
     private MediaPlayer mediaPlayer;
     androidx.appcompat.widget.Toolbar toolbarplaynhac;
     int position = 0;
@@ -261,13 +252,13 @@ public class PlayNhacActivity extends AppCompatActivity {
             mediaPlayer.stop();
             baiHatArrayList.clear();
         });
-        fragment_play_ds_baiHat = new Fragment_Play_DS_BaiHat();
-        fragment_dia_nhac = new Fragment_Dia_Nhac();
+        fragment_play_ds_baiHat = new Fragment_PlayDSBaiHat();
+        fragment_dia_nhac = new Fragment_DiaNhac();
         viewPagerPLayList = new ViewPagerPLayList(getSupportFragmentManager());
         viewPagerPLayList.AddFragment(fragment_play_ds_baiHat);
         viewPagerPLayList.AddFragment(fragment_dia_nhac);
         viewPager.setAdapter(viewPagerPLayList);
-        fragment_dia_nhac = (Fragment_Dia_Nhac) viewPagerPLayList.getItem(1);
+        fragment_dia_nhac = (Fragment_DiaNhac) viewPagerPLayList.getItem(1);
         if(baiHatArrayList.size() >0){
             getSupportActionBar().setTitle(baiHatArrayList.get(0).getTenBaiHat());
             new PLayMp3().execute(baiHatArrayList.get(0).getLinkBaiHat());

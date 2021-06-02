@@ -26,7 +26,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Fragment_banner extends Fragment {
+public class Fragment_QuangCao extends Fragment {
     View view;
     ViewPager viewPager;
     CircleIndicator circleIndicator;

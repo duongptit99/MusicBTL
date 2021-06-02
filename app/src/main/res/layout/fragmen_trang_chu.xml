@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <fragment
-            android:name="com.example.music.Fragment.Fragment_banner"
+            android:name="com.example.music.Fragment.Fragment_QuangCao"
             android:id="@+id/fragmentbanner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -35,6 +35,26 @@
         <fragment
             android:name="com.example.music.Fragment.Fragment_Album"
             android:id="@+id/fragmentalbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <fragment
+            android:name="com.example.music.Fragment.Fragment_Playlist"
+            android:id="@+id/fragmentplaylist1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <fragment
+            android:name="com.example.music.Fragment.Fragment_Chude"
+            android:id="@+id/fragmentchude1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <fragment
+            android:name="com.example.music.Fragment.Fragment_TheLoai"
+            android:id="@+id/fragmenttheloai1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <fragment
+            android:name="com.example.music.Fragment.Fragment_Album"
+            android:id="@+id/fragmentalbum1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <fragment

@@ -32,7 +32,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Fragment_Tim_Kiem extends Fragment {
+public class Fragment_TimKiem extends Fragment {
     View view;
     Toolbar toolbar;
     RecyclerView recyclerView;

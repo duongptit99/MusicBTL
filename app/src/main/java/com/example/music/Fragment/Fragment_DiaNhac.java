@@ -18,7 +18,7 @@ import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class Fragment_Dia_Nhac  extends Fragment {
+public class Fragment_DiaNhac extends Fragment {
     View view;
     CircleImageView circleImageView;
     public ObjectAnimator objectAnimator;

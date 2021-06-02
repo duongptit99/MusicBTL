@@ -7,8 +7,8 @@ import android.os.Bundle;
 
 import com.example.music.Adapter.MainViewPagerAdapter;
 import com.example.music.Fragment.Fragment_MoRong;
-import com.example.music.Fragment.Fragment_Tim_Kiem;
-import com.example.music.Fragment.Fragment_Trang_Chu;
+import com.example.music.Fragment.Fragment_TimKiem;
+import com.example.music.Fragment.Fragment_TrangChu;
 import com.example.music.R;
 import com.google.android.material.tabs.TabLayout;
 
@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void init(){
         MainViewPagerAdapter mainViewPagerAdapter = new MainViewPagerAdapter(getSupportFragmentManager());
-        mainViewPagerAdapter.addFragment(new Fragment_Trang_Chu(),"Trang Chu");
-        mainViewPagerAdapter.addFragment(new Fragment_Tim_Kiem(),"Tim Kiem");
+        mainViewPagerAdapter.addFragment(new Fragment_TrangChu(),"Trang Chu");
+        mainViewPagerAdapter.addFragment(new Fragment_TimKiem(),"Tim Kiem");
         mainViewPagerAdapter.addFragment(new Fragment_MoRong(),"Mo Rong");
         viewPager.setAdapter(mainViewPagerAdapter);
         viewPager.setOffscreenPageLimit(3);
